@@ -1,0 +1,56 @@
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+
+# Test Results
+test-results/
+playwright-report/
+playwright/.cache/
+
+# Allure Reports
+allure-results/
+allure-report/
+
+# Coverage
+coverage/
+
+# Logs
+logs/
+*.log
+
+# Screenshots and Videos
+screenshots/
+videos/
+
+# Environment Variables
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build
+dist/
+build/
+
+# Temporary Files
+*.tmp
+*.temp
+.cache/
+
+# Test Data (if sensitive)
+test-data/*.json
+!test-data/.gitkeep
+
+# K6
+performance-summary.json
