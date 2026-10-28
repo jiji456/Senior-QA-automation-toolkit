@@ -96,72 +96,9 @@
 
 ## ❓ คำถามและคำตอบ
 
-### Q1: "built me qa automation engineer ระดับอาวุโส ,ที่สามารถทำงานทุกอย่างของ qa automation engineer ได้ , ครอบคลุมทุกงานและทุกเสต็ป รายละเอียดครบทุกอย่าง มีบอกอธิบายเพื่อให้เข้าใจง่าย , ขอบอกก่อนว่าเราเป็น qa automation engineer ระดับอาวุโส เลยจะสร้างเครื่องมือนี้ขึ้นมาใช้เอง โดยสร้างมาให้เราใช้คนเดียว"
 
-**คำตอบ:**
-สร้าง QA Automation Toolkit ที่ครบถ้วนสำหรับ Senior QA Automation Engineer:
-- Web Automation ด้วย Playwright
-- API Automation ด้วย Jest + Axios
-- Performance Testing ด้วย K6
-- Visual Regression Testing
-- Accessibility Testing ด้วย axe-playwright
-- Mobile Testing
-- Test Data Management
-- CI/CD Integration ด้วย GitHub Actions
-- เอกสารภาษาไทยครบถ้วน
 
-### Q2: "ตอนนี้อยากทดสอบต่อ"
-
-**คำตอบ:**
-แนะนำให้ทดสอบ LoginPage UI เพราะ:
-- ไม่ต้อง authentication
-- มี elements ชัดเจน
-- ทดสอบได้หลายอย่าง (layout, responsive, accessibility)
-- เป็นจุดเริ่มต้นของ user flow
-
-### Q3: "ถ้าเราอยากใช้ตอนนี้ ต้องเริ่มยังไง"
-
-**คำตอบ:**
-ขั้นตอน:
-1. `cd qa-automation`
-2. `npm install`
-3. `npx playwright install`
-4. `cp .env.example .env`
-5. แก้ไข `.env` ตามความต้องการ
-6. `npm run test:web`
-
-### Q4: "ตอนนี้ QA Automation Toolkit อยู่ที่ไหน"
-
-**คำตอบ:**
-อยู่ที่: `c:\Users\sakol\Downloads\4\qa-automation`
-
-### Q5: "เจอ โฟลเดอแล้ว ต้องทำไงต่อ"
-
-**คำตอบ:**
-ขั้นตอน:
-1. ติดตั้ง dependencies: `npm install`
-2. ติดตั้ง Playwright browsers: `npx playwright install`
-3. สร้าง `.env` จาก `.env.example`
-4. แก้ไขค่าใน `.env` ตามความต้องการ
-
-### Q6: "เอาค่ามาจากไหน"
-
-**คำตอบ:**
-ค่าใน `.env` ต้องมาจาก application ที่คุณต้องการทดสอบ:
-- BASE_URL - URL ของ Frontend
-- API_BASE_URL - URL ของ Backend API
-- TEST_USER_EMAIL/PASSWORD - User credentials
-
-### Q7: "ตอนนี้ยังไม่มี application เริ่มยังไงดี"
-
-**คำตอบ:**
-รัน application ก่อน:
-1. รัน backend: `npm run start:backend` (จาก root)
-2. รัน frontend: `npm run start:frontend`
-3. ดูว่ารันอยู่ที่ port ไหน
-4. ตั้งค่าใน `.env` ตามนั้น
-
-### Q8: "อยากลองสอบสักอย่างหนึ่ง เอาอะไรดีและเอามาจากที่ไหนดี"
+### Q1: "อยากลองสอบสักอย่างหนึ่ง เอาอะไรดีและเอามาจากที่ไหนดี"
 
 **คำตอบ:**
 แนะนำทดสอบ LoginPage UI ของ Bookmark Manager:
@@ -170,7 +107,7 @@
 - ทดสอบได้หลายอย่าง
 - เป็นจุดเริ่มต้นของ user flow
 
-### Q9: "ลองสร้าง ui ให้ qa automation นี้"
+### Q2: "ลองสร้าง ui ให้ qa automation นี้"
 
 **คำตอบ:**
 เสนอสร้าง UI Dashboard ด้วย React + Vite + shadcn/ui:
@@ -182,62 +119,7 @@
 
 แต่คุณยกเลิกไป
 
-### Q10: "ช่วยอัป qa-aumation ไปที่ github repo"
 
-**คำตอบ:**
-อัปโหลดไป https://github.com/jiji456/bbl-bookmarks-manager.git:
-1. `git add qa-automation/`
-2. `git commit -m "Add QA Automation Toolkit..."`
-3. `git push origin main`
-
-### Q11: "ทำ repo ใหม่ที่มีแต่ qa-automation"
-
-**คำตอบ:**
-สร้าง repo ใหม่: https://github.com/jiji456/Senior-qa-automation-toolkit.git
-1. Init git ใหม่ใน qa-automation folder
-2. เชื่อมต่อกับ repo ใหม่
-3. Add ไฟล์ทั้งหมดและ commit
-4. Push ไป GitHub
-
-### Q12: "โอเคแล้วตอนนี้อยากทดสอบต่อ"
-
-**คำตอบ:**
-ตัวเลือกการทดสอบต่อไป:
-1. Accessibility Tests (แนะนำ)
-2. Visual Regression Tests
-3. Mobile Testing
-4. API Tests (ต้องมี Database)
-5. Dashboard Page Tests (ต้อง mock Auth0)
-
-### Q13: "สามารถทำตำแหน่งนี้ได้ไหม" (พร้อม Job Description AI Engineer)
-
-**คำตอบ:**
-วิเคราะห์ความเหมาะสม:
-- **Strong Match:** Build automation, Connect APIs, Scripting, Testing, Documentation
-- **Learning Opportunity:** Airtable, Make, Zapier, n8n, AI Tools
-- **Conclusion:** คุณสามารถทำได้แน่นอน QA Automation Toolkit เป็น portfolio ที่แข็งแกร่ง
-
-### Q14: "ตอนนี้อยากลองเขียน methodology ของ toolkit นี้"
-
-**คำตอบ:**
-สร้าง METHODOLOGY.md ที่ครอบคลุม:
-- แนวคิดและหลักการ
-- สถาปัตยกรรมของ Toolkit
-- วิธีการใช้งานแต่ละส่วน
-- Best Practices
-- ขั้นตอนการทำงาน
-- ตัวอย่างการนำไปใช้
-
-### Q15: "อยากให้รวมบทสนทนากับคำถามที่ใช้ตั้งแต่เริ่ม toolkit นี้ด้วย และการแสดงผล"
-
-**คำตอบ:**
-สร้าง PROJECT-JOURNAL.md ที่รวบรวม:
-- ประวัติการพัฒนา
-- คำถามและคำตอบทั้งหมด
-- ผลลัพธ์ที่ได้
-- การแสดงผล
-
----
 
 ## 🎯 ผลลัพธ์ที่ได้
 
